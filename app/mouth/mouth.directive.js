@@ -2,8 +2,10 @@
 
 gordonApp.face.directive("mouth", function() {
     return {
-        scope: {},
+    	scope: {
+    		isolatedSentence: '=sentence'
+    	},
         restrict: "E",
-        template: "<div>Mourh</div>",
+        template: "<div>{{isolatedSentence}}</div>",
     }
 });
