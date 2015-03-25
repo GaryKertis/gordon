@@ -1,10 +1,22 @@
 "use strict";
 
-var gordonApp = angular.module("gordonApp", ["gordonApp.face"]);
+angular.module("gordonApp", [
+    "ui.router",
+    "gordonApp.face"
+])
 
-gordonApp.controller("gordonCtrl", function ($scope, $http) {
+.config(function($stateProvider) {
+    $stateProvider
+        .state('gordon', {
+            url: "/",
+            templateUrl: "app/main.html",
+            controller: "gordonCtrl"
+        });
+})
 
-$scope.top = "Top Lip.";
-$scope.bottom = "Bottom Lip.";
+.controller("gordonCtrl", function($scope, $http) {
+
+    $scope.top = "Top Lip.";
+    $scope.bottom = "Bottom Lip.";
 
 });

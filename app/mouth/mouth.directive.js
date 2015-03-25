@@ -1,6 +1,6 @@
 "use strict";
 
-gordonApp.face.directive("mouth", function() {
+angular.module('gordonApp.face').directive("mouth", function() {
     return {
     	scope: {
     		isolatedSentence: '=sentence'

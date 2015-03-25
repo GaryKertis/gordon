@@ -6,6 +6,9 @@
 *.exe
 *.o
 *.so
+
+bower_components/*
+node_modules/*
  
 # Packages #
 ############
