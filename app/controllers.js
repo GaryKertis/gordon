@@ -9,14 +9,17 @@ angular.module("gordonApp", [
     $stateProvider
         .state('gordon', {
             url: "/",
-            templateUrl: "app/main.html",
-            controller: "gordonCtrl"
+            templateUrl: "app/main.html"
         });
 })
 
-.controller("gordonCtrl", function($scope, $http) {
+.controller("gordonCtrl", ['$scope', '$http', 'audioService', 
 
-    $scope.top = "Top Lip.";
-    $scope.bottom = "Bottom Lip.";
+	function($scope, $http, audioService) {
 
-});
+    $scope.top = "Top.";
+    $scope.bottom = "Bottom.";
+
+    audioService('No thanks, Im full.');
+
+}]);
