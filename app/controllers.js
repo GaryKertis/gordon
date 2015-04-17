@@ -17,8 +17,10 @@ angular.module("gordonApp", [
 
 	function($scope, $http, audioService) {
 
-    $scope.top = "Top.";
-    $scope.bottom = "Bottom.";
+    $scope.left = "leftEye";
+    $scope.right = "rightEye";
+
+    $scope.word = "wordsForMouth";
 
     audioService('No thanks, Im full.');
 
