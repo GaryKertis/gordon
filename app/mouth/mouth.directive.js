@@ -6,6 +6,6 @@ angular.module('gordonApp.face').directive("mouth", function() {
     		isolatedSentence: '=sentence'
     	},
         restrict: "E",
-        template: "<canvas id='{{isolatedSentence}}'></canvas>",
+        template: "<div id='{{isolatedSentence}}'>mouth</div>",
     }
 });
