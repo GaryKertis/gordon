@@ -3,5 +3,8 @@
 }
 
 .mouth {
-	background-color: black;
+}
+
+.tooth {
+	border: 1px solid black;
 }
